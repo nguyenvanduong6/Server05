@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Duong</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="search.css">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+        <h2 class="logo">TRANG CHU</h2>
+        <input type="checkbox" id="chk">
+        <lable for="chk" class="show-menu-btn">
+          <i class="fas fa-ellipsis-h"></i>
+        </lable>
+
+        <ul class="menu">
+          <a href="home.html">Home</a>
+          <a href="search.html">Search</a>
+          <a href="index.html">Add</a>
+          <a href="#">Contact</a>
+          <a href="#">About</a>
+          <label for="chk" class="hide-menu-btn">
+            <i class="fas fa-times"></i>
+          </label>
+        </ul>
+        <label class="login">
+          <a href="#">login</a>
+          <i class="fas fa-user-alt"></i>
+        </label>
+    </div>
+
+    <div class="testimonial-section">
+      <div class="inner-width">
+        <h1>Search Post</h1>
+        <div class="border"></div>
+        <div class="search" action="search.html" method="POST">
+          <input type="text" class="search-text" placeholder="Search here" name="">
+          <a class="search-btn" href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+
+
+
+<script type="text/javascript">
+  $(".owl-carousel").owlCarousel({
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+      0:{
+        items:1
+      },
+      680:{
+        items:2
+      },
+      960:{
+        items:3
+      }
+    }
+  });
+</script>
+
+  </body>
+</html>
